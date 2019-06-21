@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Weirdough</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content="width=device-width,initial-scale=1.0" name="viewport">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link rel="stylesheet" href="weirdough.css">
+	</head>
+	<body>
+		<div class="container">
+            
+            <div class="jumbotron">
+                <div id="menuBG"><h1>Weirdough</h1>
+                <br>
+                <br>
+                <br>
+                <p>...Weird pizza for weird people.</p>
+                <hr class="my-4">
+            </div>
+      <form id="frmMenu">
+				<div class="menu">
+					<h3>Size:</h3>
+					<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+					<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+					<input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+					<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+				</div>
+				<div class="menu">
+					<h3>Meats:</h3>
+					<input class="meats" type="checkbox" name="Meat" value="Shrimp"> Shrimp<br>
+					<input class="meats" type="checkbox" name="Meat" value="Crab (Imitation)"> Crab (Imitation) <br>
+					<input class="meats" type="checkbox" name="Meat" value="Peameal Bacon"> Peameal Bacon<br> 
+					<input class="meats" type="checkbox" name="Meat" value="Crocodile">Crocodile<br>
+					<input class="meats" type="checkbox" name="Meat" value="Herring"> Herring<br>
+					<input class="meats" type="checkbox" name="Meat" value="Fried Egg"> Fried Egg<br>
+				</div>
+				<div class="menu">
+					<h3>Veggies:</h3>
+					<input class="veggies" type="checkbox" name="Veggie" value="Brandy Wine Tomatoes"> Brandy Wine Tomatoes<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Pickles"> Pickles <br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Guacamole"> Guacamole<br> 
+					<input class="veggies" type="checkbox" name="Veggie" value="Rhubarb"> Rhubarb<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Morel Mushrooms"> Morel Mushrooms<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Swiss Chard"> Swiss Chard<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Kale"> Kale<br>
+					<input class="veggies" type="checkbox" name="Veggie" value="Ghost Peppers"> Ghost Peppers<br>
+				</div>
+				<div class="menu">
+					<h3>Cheese:</h3>
+					<input class="cheese" type="radio" name="Cheese" value="Regular cheese" checked> Regular cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="No cheese"> No cheese<br>
+					<input class="cheese" type="radio" name="Cheese" value="Way Too Much Cheese"> Way Too Much Cheese<br>
+				</div>
+				<div class="menu">
+					<h3>Sauce:</h3>
+					<input class="sauce" type="radio" name="Sauce" value="Sweet sriracha" checked>Sweet sriracha<br>
+					<input class="sauce" type="radio" name="Sauce" value="Curry"> Curry<br>
+					<input class="sauce" type="radio" name="Sauce" value="Pesto"> Pesto<br>
+					<input class="sauce" type="radio" name="Sauce" value="Sauceless"> Sauceless<br>
+				</div>
+				<div class="menu">
+					<h3>Crust:</h3>
+					<input class="crust" type="radio" name="Crust" value="Boring Crust" checked> Boring Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+					<input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+					<input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
+				</div>
+			</form><br>
+        
+			<div class="controls">
+				<div class="button" onclick="getReceipt()">
+					<p>Do It!</p>
+				</div>
+        
+				<div class="button" onclick="clearAll()">
+					<p>I Messed Up</p>
+				</div>
+			</div>
+			<div id="cart">
+				<div id="title1"><h3>You Ordered:</h3></div>
+				<div id="title2"><h3>Subtotal:</h3></div>
+				<div id="showText1"></div>
+				<div id="showText2"></div>
+				<div id="totalPrice1"><h3>Total:</h3></div>
+				<div id="totalPrice2"></div>
+			
+        </div>
+		
+      </div>
+    <footer>
+            <p>Contact information: <a href="https://www.pizzahut.com">
+            definitely_not_pizza_hut@weirdough.com</a></p>
+     </footer>
+		
+    </div>
+		<script  src="weirdough.js"></script>
+    </body>
+</html>
